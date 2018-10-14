@@ -1,7 +1,7 @@
 module.exports = function(plop) {
   // create your generators here
   plop.setGenerator("foo", {
-    description: "this is a skeleton plopfile",
+    description: "This is some Foo generator",
     prompts: [
       {
         type: "input",
@@ -20,7 +20,13 @@ module.exports = function(plop) {
         message: "now controller surname"
       }
     ], // array of inquirer prompts
-    actions: [] // array of actions
+    actions: [
+      {
+        type: "add",
+        path: "src/{{name}}.js",
+        templateFile: "plop-templates/inputs.hbs"
+      }
+    ] // array of actions
   });
   plop.setGenerator("bar", {
     description: "this is a skeleton plopfile",
