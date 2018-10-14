@@ -4,6 +4,7 @@
   "description": "VSCode interface for Plop micro-generator framework.",
   "version": "0.0.1",
   "publisher": "satansdeer",
+  "repository": "https://github.com/satansdeer/vscode-plop",
   "engines": {
     "vscode": "^1.27.0"
   },
