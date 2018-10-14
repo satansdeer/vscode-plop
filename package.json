@@ -11,13 +11,13 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.sayHello"
+    "onCommand:extension.Plop"
   ],
   "main": "./extension",
   "contributes": {
     "commands": [
       {
-        "command": "extension.sayHello",
+        "command": "extension.Plop",
         "title": "Plop"
       }
     ]
@@ -35,7 +35,6 @@
   },
   "dependencies": {
     "bluebird": "^3.5.2",
-    "co": "^4.6.0",
     "node-plop": "^0.16.0"
   }
 }

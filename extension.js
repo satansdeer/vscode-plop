@@ -25,7 +25,7 @@ const processPrompt = prompt => () => {
 
 function activate(context) {
   let disposable = vscode.commands.registerCommand(
-    "extension.sayHello",
+    "extension.Plop",
     function() {
       vscode.window
         .showQuickPick(plop.getGeneratorList().map(g => g.name))
