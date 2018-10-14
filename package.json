@@ -1,7 +1,7 @@
 {
   "name": "plop",
   "displayName": "plop",
-  "description": "",
+  "description": "VSCode interface for Plop micro-generator framework.",
   "version": "0.0.1",
   "publisher": "satansdeer",
   "engines": {
