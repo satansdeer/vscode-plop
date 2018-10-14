@@ -28,7 +28,13 @@ module.exports = function(plop) {
       {
         type: "input",
         name: "input_1",
-        message: "Input number 1"
+        message: "Input number 1",
+        validate: function(value) {
+          if (/2/.test(value)) {
+            return true;
+          }
+          return "Input number 1 should ";
+        }
       },
       {
         type: "input",
