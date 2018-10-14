@@ -8,7 +8,7 @@
   "engines": {
     "vscode": "^1.27.0"
   },
-  "icon": "https://pbs.twimg.com/profile_images/821929604030091266/izAK0mIv_400x400.png",
+  "icon": "plop.png",
   "categories": [
     "Other"
   ],
