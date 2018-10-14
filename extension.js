@@ -28,9 +28,16 @@ function activate(context) {
     "extension.Plop",
     function() {
       vscode.window
-        .showQuickPick(plop.getGeneratorList().map(g => g.name))
+        .showQuickPick(
+          plop
+            .getGeneratorList()
+            .map(g => ({ label: g.name, description: g.description })),
+          {
+            placeHolder: "Select generator:"
+          }
+        )
         .then(selection => {
-          const generator = plop.getGenerator(selection);
+          const generator = plop.getGenerator(selection.label);
           const questions = generator.prompts.map(prompt =>
             processPrompt(prompt)
           );
@@ -44,7 +51,9 @@ function activate(context) {
                 );
               }
               if (result.changes.length) {
-                vscode.window.showInformationMessage("Success!");
+                vscode.window.showInformationMessage(
+                  "Your file was generated successfully!"
+                );
               }
             });
           });
